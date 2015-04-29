@@ -17,14 +17,15 @@ body  {
 .content-row  {background-position: center;text-align: center;}
 
 body {
-	font: normal 1.0em/1.5em sans-serif;
+	font: normal .85em/1.0em Philosopher, sans-serif;
 	color: #222;
-	
+	line-height: 1.5em;
+
 }
 .main-wrapper  {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
-		min-height:100%;
+		height: auto;
 		position: relative;
 	}
 
@@ -32,7 +33,7 @@ body {
 .main-header-wrapper  {
 		width: 100%;
 		margin: 0 auto;
-		min-height:100%;
+		min-height:50%;
 		position: relative;
 	}
 
@@ -41,13 +42,32 @@ body {
 	font-size: 1.5em;
 }
 
-h2, h3  {padding:0 0;margin:0 0;}
+h2, h3  {padding-top:5px;margin:0 0;}
 
-p  {padding:10px;}
+p  {padding:10px;line-height: 1.5em;}
 
 #showcase ul li  {
 	left:0 !important;
 }
+
+div #paper-scroll-bg  {
+	
+	background-image: url('../img/Stained-Paper-Background.jpg');
+	width: 100%;
+	margin: 0 auto;
+	line-height: 20px;
+	letter-spacing: 1px;
+	font: normal .85em/1.0em Philosopher, sans-serif;
+	height:100%;
+	bottom: 0;
+	position: relative;
+	text-align: center;
+	padding: 20px;
+}
+div #paper-scroll-bg h1 {line-height: 1.25em;}
+
+
+#paper-scroll-bg, .content-row, .main-wrapper  {padding-bottom: 0;}
 
 /* Layout Element Colors	(Basic Mobile Markup)
 ========================================================= */
@@ -127,27 +147,28 @@ p  {padding:10px;}
 	overflow: hidden;
 	background-color: brown;
 	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 footer  {
 	font-size: 1em;
 	padding-top: 0px;
 	margin: 0 auto;
-	bottom: 0;
+	top: 0;
 	left:0;
 	padding-left: 10px;
 	width:100%;
 	height: 40px;
 	float: left;
 	position: absolute;
-	color: #000;	
+	color: #000;
+	display: block;	
 }
 .main-footer  {
 		display: inline-block;
 		font-size: 1em;
 		padding-top: 0px;
-		margin: 0 auto;
+		margin-top: -100px;
 		bottom: 0;
 		width: 100%;
 		min-height: 100px;
@@ -156,6 +177,11 @@ footer  {
 }
 footer .main-footer p  {
 	padding: 0;
+}
+
+.title-heading  {
+	text-align: center;
+	font-size: 1.25em;
 }
 
 
@@ -171,8 +197,7 @@ footer .main-footer p  {
 		position: relative;
 		text-align: center;
 		left: 0;
-		padding-bottom: 100px;
-		
+			
 	}
 
 
@@ -237,6 +262,7 @@ img#foetoe.feat-image  {
 	
 	border-style: double;
 	border-color: #add123;
+	margin-bottom: 0;
 }
 
 
@@ -248,7 +274,15 @@ img#foetoe.feat-image  {
 	width: 100%;
 	min-height: 300px;
 	color: #add123;
+	padding-top: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.1em;
+	margin-top: 0em; 
 }
+
+	
+
 
 .posters  {
 	padding:5px;
@@ -280,14 +314,28 @@ img#foetoe.feat-image  {
  Media Queries *|* Larger Devices and Desktops/Laptops
 ============================================================= */
 
+@media screen and (min-width: 480px)  {
+	body {
+		font: normal 1.0em/1.5em Philosopher, sans-serif;
+		color: #222;
+	}
+	.footer-banner  {
+		min-height: 325px;
+		margin-top: 0px;
+	}
+}
 
 
 @media screen and (min-width: 769px)  {
-
-
+	
 	.main-wrapper  {
-		width: 95%;
-		margin: auto;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.footer-banner  {
+		min-height: 300px;
+		margin-top: 0px;
 	}
 
 
@@ -346,15 +394,16 @@ img#foetoe.feat-image  {
 	}
 
 	.primary-content  {
-		float:left;
+		float:none;
 		width: 85%;
 		height:100%;
 		bottom: 0;
 		margin: 0 auto;
 		position: relative;
 		text-align: center;
-		left: -4em;
-		padding-bottom: 100px;
+		left: 0;
+		padding-bottom: 50px;
+		margin-bottom: -40px;
 	}
 	.col:last-child  {
 		float: right;
@@ -368,6 +417,10 @@ img#foetoe.feat-image  {
 
 	.extra-content  {
 		display: none;  /* UnHide from Mobile view */
+	}
+
+	div #paper-scroll-bg {
+		width:75%;
 	}
 
 
@@ -433,15 +486,15 @@ img#foetoe.feat-image  {
 		padding-bottom: 100px;
 	}
 	.primary-content  {
-		width: 85%;
+		width: 66%;
 		height:100%;
 		bottom: 0;
 		margin: 0 auto;
 		position: relative;
 		text-align: center;
-		left: -4.5em;
 		padding-left: 0;
-		padding-bottom: 100px;
+		padding-bottom: 30px;
+		margin-bottom: 0px;
 	}
 	.col:last-child  {
 		float: right;
@@ -466,6 +519,11 @@ img#foetoe.feat-image  {
 		margin-right:2em;
 	}
 
+	div #paper-scroll-bg  {
+		width:85%;
+		margin: 0 auto;
+	}
+
 	/*%%%%%%%%%%%%%%%%  Float Clearfix  %%%%%%%%%%%%%%%%%*/
 
 	.group::after  {
@@ -483,13 +541,12 @@ img#foetoe.feat-image  {
 		
 	}
 
-
 }
 
 @media screen and ( min-width: 1580px )  {
 
 	.main-wrapper  {
-		width: 95%;
+		width: 100%;
 		margin: 0 auto;
 	}
 
@@ -498,30 +555,40 @@ img#foetoe.feat-image  {
 		background-color: #000;
 	}
 	.feat-banner-image  {
-		width: 75%;
+		width: 85%;
 		display: block;
 		background-position: center center;
 		margin: 0 auto;
 	}
 	.primary-content  {
-		width: 85%;
+		width: 66%;
 		height:100%;
 		bottom: 0;
 		margin: 0 auto;
 		position: relative;
 		text-align: center;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
+		margin-bottom: 0px;
+		border-radius: 10px;
 	}
 	.col3:last-child  {
 		float: right;
 		margin-left: -4em;
 		margin-right: 2em;
 	}
+
+	#showcase  {
+		margin-bottom: 0;
+	}
+
+	div #paper-scroll-bg {
+		width:66%;
+	}
 	
 }
 
 /*@#@#@#@##@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
-@#@#@@#@#@#@#@##   Animations   #@#@#@#@#@@#@#
+@#@#@@#@#@#@#@##   Animations   #@#@#@#@#@@#@
 @#@#@#@#@#@#@#@#@#@#@#@#@2#@#@#@#@#@#@#@#@#@*/
 
 
@@ -566,9 +633,9 @@ img#foetoe.feat-image  {
 		left: 0;
 		opacity: 1;
 		position: relative;
-		bottom: 200px;
+		bottom: 195px;
 		margin: 0;
-		padding: 0;
+		padding: 0px;
 	}
 	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
