@@ -1,0 +1,582 @@
+
+/* Page Styles  ====== styled MOBILE first ======
+============================================================= */
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body  {
+ height: 100% !important;
+ margin:0;
+ padding: 0;
+ background-image: url('../img/Paper-Grunge-Background-37.jpg');
+}
+
+.content-row  {background-position: center;text-align: center;}
+
+body {
+	font: normal 1.0em/1.5em sans-serif;
+	color: #222;
+	
+}
+.main-wrapper  {
+		width: 90%;
+		margin: 0 auto;
+		min-height:100%;
+		position: relative;
+	}
+
+
+.main-header-wrapper  {
+		width: 100%;
+		margin: 0 auto;
+		min-height:100%;
+		position: relative;
+	}
+
+.selected  {
+	color:#add123 !important;
+	font-size: 1.5em;
+}
+
+h2, h3  {padding:0 0;margin:0 0;}
+
+p  {padding:10px;}
+
+#showcase ul li  {
+	left:0 !important;
+}
+
+/* Layout Element Colors	(Basic Mobile Markup)
+========================================================= */
+
+.main-header       { background-color: #000; }
+.main-logo a       { background-color: #5fcf80; }
+.main-nav a       { background-color: #000; }
+.secondary-content { background-color: #bfe3d0; }
+
+
+
+/* Header, Banner, Footer, Nav table-layout: (Basic Mobile Markup)
+=============================================================== */
+
+.main-header  {
+	width:100%;
+	min-height: 100px;
+	padding: 15px;
+	overflow: hidden;
+	position: inherit;
+	
+}
+
+.main-logo  {
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 175px;
+	max-height: 175px;
+	display:block;
+	box-shadow: 5px 5px #add123;
+	float: right;
+	top: 0;
+	left: 0;
+}
+
+.main-nav   {
+	float: right;
+}
+.main-nav li  {
+	margin-top: 5px;
+	margin-bottom: 0;
+	float:left;
+	
+}
+
+.main-nav  {
+	bottom: 0;
+	right: 10px;
+}
+.main-logo a  {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	float: right;
+	padding: 3px
+}
+
+.main-nav a, .main-nav li, .main-nav {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	padding: 3px;
+
+}
+
+.button  {	
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 8px 15px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	background-color: brown;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+footer  {
+	font-size: 1em;
+	padding-top: 0px;
+	margin: 0 auto;
+	bottom: 0;
+	left:0;
+	padding-left: 10px;
+	width:100%;
+	height: 40px;
+	float: left;
+	position: absolute;
+	color: #000;	
+}
+.main-footer  {
+		display: inline-block;
+		font-size: 1em;
+		padding-top: 0px;
+		margin: 0 auto;
+		bottom: 0;
+		width: 100%;
+		min-height: 100px;
+		position: relative;
+		color: #000;	
+}
+footer .main-footer p  {
+	padding: 0;
+}
+
+
+/* Column layout: (Basic Mobile Markup)
+================================================ */
+
+.primary-content  {
+		
+		width: 85%;
+		height:auto;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		left: 0;
+		padding-bottom: 100px;
+		
+	}
+
+
+.col  {
+	padding: 20px 20px 0 20px;
+	/*padding-bottom: 100px;*/
+	height:100%;
+
+	
+}
+/*.col:last-child  {margin-bottom: 50px;}*/
+
+.extra-content {
+	display: none;
+	padding-bottom: 100px;
+}
+
+/* Imagery  (Basic Mobile Markup)
+================================ */
+
+.feat-image  {
+	width: 100%;
+	height: auto;
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	border: solid 1px;
+	padding: 5px;
+}
+
+
+img#foetoe.feat-image  {
+		width:100%;
+		float: left;
+		border-color: #add123;
+	}
+	
+
+.feat-banner  {
+		width: 100%;
+		min-height: 200px;
+		background-color: #000;
+
+}
+
+
+.main-banner h2, .main-banner h3    {
+	color: #add123;
+	text-align: center;
+	padding: 5px;
+	vertical-align-bottom: 0;
+	position: relative;
+	display: table;
+}
+.feat-banner-image  {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-color: #add123;
+	}
+
+#showcase  {
+	
+	border-style: double;
+	border-color: #add123;
+}
+
+
+.footer-banner  {
+	margin: 0 auto;
+	text-align: center;
+	background-image: url("../img/Rusty-Metal-Background-47.jpg");
+	z-index: -100;
+	width: 100%;
+	min-height: 300px;
+	color: #add123;
+}
+
+.posters  {
+	padding:5px;
+	width:19.5%;
+	float: left;
+	height:20em;
+	top: 0;
+	margin: 0 auto;
+	position: relative;
+	margin: .25%;
+	margin-bottom: 2%;
+}
+.posters:last-child  {
+	float: right;
+}
+
+
+/*============  Float Clearfix  ============*/
+
+.group::after  {
+	content: " ";
+	display: table;
+	clear:both;
+}
+
+
+
+/*===========================================================
+ Media Queries *|* Larger Devices and Desktops/Laptops
+============================================================= */
+
+
+
+@media screen and (min-width: 769px)  {
+
+
+	.main-wrapper  {
+		width: 95%;
+		margin: auto;
+	}
+
+
+	/*%%%%%%%%  Header and Banner  %%%%%%%%*/
+
+	.main-logo  {
+		float:right;
+		display: block;
+		max-width: 175px;
+		max-height: 175px;
+		box-shadow: 5px 5px #add123;
+	}
+	.main-nav li  {
+		margin-left:  5px;
+		float: left;
+	}
+	
+	.main-nav li  {
+		float: left;
+	}
+	.main-nav  {
+		float: right;
+	}
+	
+	
+
+	/*%%%%%%%%%%%%%  Column layout  %%%%%%%%%%%%%%*/
+
+	.extra-content.col  {
+		float: left;
+		width: 24%;
+		height:100%;
+		bottom: 0;
+		position: relative;
+		padding-bottom: 100px;
+	}
+
+	.col  {
+		float: left;
+		width: 48%;
+		height:100%;
+		top: 0;
+		position: relative;
+		margin: .25%;
+		padding-bottom: 100px;
+	}
+
+	.col3  {
+		float: left;
+		width: 31%;
+		height:100%;
+		top: 0;
+		position: relative;
+		margin: .25%;
+		padding-bottom: 100px;
+	}
+
+	.primary-content  {
+		float:left;
+		width: 85%;
+		height:100%;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		left: -4em;
+		padding-bottom: 100px;
+	}
+	.col:last-child  {
+		float: right;
+	}
+
+	.col3:last-child  {
+		float: right;
+		margin-left: -2em;
+		margin-right:2em;
+	}
+
+	.extra-content  {
+		display: none;  /* UnHide from Mobile view */
+	}
+
+
+	/*%%%%%%%%%%%%%%%%  Imagery  %%%%%%%%%%%%%%%%%*/
+
+	
+}
+
+
+/*o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o
+0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0o0*/
+
+
+
+@media screen and (min-width: 1080px)  {
+
+
+	/*%%%%%%%%  Header and Banner and Footer %%%%%%%%*/
+	.main-nav, 
+	.main-logo  {
+		position: relative;
+	}
+	
+	.main-nav li  {
+		float: left;
+	}
+	.main-nav  {
+		float: right;
+	}
+	.main-logo  {
+		float: right;
+		margin-right: 50px;
+		min-width: 100px;
+		display: block;
+		box-shadow: 5px 5px #add123;
+	}
+	
+	.main-nav li  {
+		margin-right: 5px;
+		display: inline-block;
+	}
+	
+	
+
+	/*%%%%%%%%%%%%%  Column layout  %%%%%%%%%%%%%%*/
+
+	.extra-content.col  {
+		float: left;
+		width: 19.5%;
+		height:100%;
+		bottom: 0;
+		position: relative;
+		padding-bottom: 100px;
+	}
+
+	.col  {
+		float: left;
+		width: 23%;
+		height:100%;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 100px;
+	}
+	.primary-content  {
+		width: 85%;
+		height:100%;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		left: -4.5em;
+		padding-left: 0;
+		padding-bottom: 100px;
+	}
+	.col:last-child  {
+		float: right;
+	}
+	.extra-content,
+	.main-banner  {
+		display: block;  /* UnHide from Mobile view */
+		margin: 0;
+	}
+	.col3  {
+		float: left;
+		width: 32%;
+		height:100%;
+		bottom: 0;
+		position: relative;
+		padding-bottom: 100px;
+		padding-left: 20px;
+	}
+	.col3:last-child  {
+		float: right;
+		margin-left: -4em;
+		margin-right:2em;
+	}
+
+	/*%%%%%%%%%%%%%%%%  Float Clearfix  %%%%%%%%%%%%%%%%%*/
+
+	.group::after  {
+		content: " ";
+		display: table;
+		clear:both;
+	}
+
+
+	/*%%%%%%%%%%%%%%%%  Imagery  %%%%%%%%%%%%%%%%%*/
+
+	.feat-image  {
+		width: 100%;
+		float: left;
+		
+	}
+
+
+}
+
+@media screen and ( min-width: 1580px )  {
+
+	.main-wrapper  {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.feat-banner  {
+		width:100%;
+		background-color: #000;
+	}
+	.feat-banner-image  {
+		width: 75%;
+		display: block;
+		background-position: center center;
+		margin: 0 auto;
+	}
+	.primary-content  {
+		width: 85%;
+		height:100%;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.col3:last-child  {
+		float: right;
+		margin-left: -4em;
+		margin-right: 2em;
+	}
+	
+}
+
+/*@#@#@#@##@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+@#@#@@#@#@#@#@##   Animations   #@#@#@#@#@@#@#
+@#@#@#@#@#@#@#@#@#@#@#@#@2#@#@#@#@#@#@#@#@#@*/
+
+
+/* Footer Wrapper */ 
+  @-moz-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+  @-webkit-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+  @-o-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+  @-ms-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+  @keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+
+  #footwrap {
+    -moz-animation: footwrap 3s reverse;
+    -webkit-animation: footwrap 3s reverse;
+    -o-animation: footwrap 3s reverse;
+    -ms-animation: footwrap 3s reverse;
+    animation: footwrap 3s reverse;
+    opacity: 0;
+  }
+
+  /* @#@#@#@#@#@#@#@ Footer Banner Animation @#@#@#@#@#@#@ */
+
+	.bg  {
+		-moz-animation: bg 60s linear infinite;
+		-webkit-animation: bg 60s linear infinite;
+		-o-animation: bg 60s linear infinite;
+		-ms-animation: bg 60s linear infinite;
+		animation: bg 60s linear infinite;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-o-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		/* Set your background with this */
+		background: url("../img/soundmusicy.jpg");
+		background-repeat: repeat-x;
+		height:10em;
+		left: 0;
+		opacity: 1;
+		position: relative;
+		bottom: 200px;
+		margin: 0;
+		padding: 0;
+	}
+	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@-ms-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+
+	.bg {
+		background-size: 550px auto;
+		width: 6750px;
+	}
