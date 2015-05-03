@@ -4,17 +4,23 @@
 
 * {
 	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 html,
 body  {
  height: 100% !important;
- margin:0;
+ margin:0 auto;
  padding: 0;
+ width: 100%;
+ max-width: 100%;
  background-image: url('../img/Paper-Grunge-Background-37.jpg');
+ position: relative;
 }
 
 .content-row  {background-position: center;text-align: center;}
+.content-row1  {background-position: center;}
 
 body {
 	font: normal .85em/1.0em Philosopher, sans-serif;
@@ -42,17 +48,48 @@ body {
 	font-size: 1.5em;
 }
 
-h2, h3  {padding-top:5px;margin:0 0;}
+h2, h3  {padding-top:5px;margin:0 0;padding-bottom:0;margin-bottom:0;}
 
 p  {padding:10px;line-height: 1.5em;}
 
-#showcase ul li  {
-	left:0 !important;
+hr.styleez  {
+	width:60%;
+	border-top: medium double #222;
+	text-align: center;
+}
+
+hr.stylee  {
+	padding: 0;
+	border: none;
+	border-top: medium double #222;
+	text-align: center;
+	color: #222 !important;
+}
+
+a  {
+	text-decoration: none;
+	color:#4f1e18;
+}
+a:hover  {
+	font: normal 1em/1.25em Philosopher, sans-serif;
+	color: darkorange;
+}
+
+hr.stylee:after  {
+
+	content: " Upcoming Workshops ";
+	display: inline-block;
+	position: relative;
+	top: -0.45em;
+	font-size: 1.5em;
+	padding: 0 3px;
+	border-radius: 5px;
+	background: #dddcc1;
 }
 
 div #paper-scroll-bg  {
 	
-	background-image: url('../img/Stained-Paper-Background.jpg');
+	/*background-image: url('../img/Paper-Grunge-Background-37.jpg');*/
 	width: 100%;
 	margin: 0 auto;
 	line-height: 20px;
@@ -155,11 +192,11 @@ footer  {
 	padding-top: 0px;
 	margin: 0 auto;
 	top: 0;
-	left:0;
-	padding-left: 10px;
+	right:0;
+	padding-right: 10px;
 	width:100%;
 	height: 40px;
-	float: left;
+	float: right;
 	position: absolute;
 	color: #000;
 	display: block;	
@@ -168,7 +205,7 @@ footer  {
 		display: inline-block;
 		font-size: 1em;
 		padding-top: 0px;
-		margin-top: -100px;
+		margin-top: 0px;
 		bottom: 0;
 		width: 100%;
 		min-height: 100px;
@@ -177,11 +214,34 @@ footer  {
 }
 footer .main-footer p  {
 	padding: 0;
+	float: right;
 }
 
 .title-heading  {
 	text-align: center;
 	font-size: 1.25em;
+}
+
+.contact-icons  {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	padding: 10px 10px;
+	margin-top: 2em;
+}
+
+.contact-icons-text  {
+	display: inline-block;
+	margin: 0 auto;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	padding: 10px 10px;
+	font-weight: 600;
+
 }
 
 
@@ -197,17 +257,33 @@ footer .main-footer p  {
 		position: relative;
 		text-align: center;
 		left: 0;
+		color: #000;
 			
 	}
+
+.wkshp-primary-content  {
+		width: 85%;
+		height:auto;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		left: 0;
+		color: #000;
+		padding: 2em;
+}
 
 
 .col  {
 	padding: 20px 20px 0 20px;
 	/*padding-bottom: 100px;*/
 	height:100%;
-
-	
 }
+
+.col3  {
+	padding: 10px 10px 0 10px;
+	height:100%;
+}
+
 /*.col:last-child  {margin-bottom: 50px;}*/
 
 .extra-content {
@@ -228,12 +304,12 @@ footer .main-footer p  {
 }
 
 
-img#foetoe.feat-image  {
+img #foetoe .feat-image  {
 		width:100%;
 		float: left;
 		border-color: #add123;
 	}
-	
+
 
 .feat-banner  {
 		width: 100%;
@@ -250,6 +326,7 @@ img#foetoe.feat-image  {
 	vertical-align-bottom: 0;
 	position: relative;
 	display: table;
+	margin: 0 auto;
 }
 .feat-banner-image  {
 		width: 100%;
@@ -258,11 +335,20 @@ img#foetoe.feat-image  {
 		border-color: #add123;
 	}
 
-#showcase  {
-	
+#showcase1  {
+	min-height: 30em;
 	border-style: double;
 	border-color: #add123;
 	margin-bottom: 0;
+	position: relative;
+}
+
+#showcase  {
+	min-height: 13em;
+	border-style: double;
+	border-color: #add123;
+	margin-bottom: 0;
+	position: relative;
 }
 
 
@@ -279,9 +365,8 @@ img#foetoe.feat-image  {
 	padding-right: 10px;
 	line-height: 1.1em;
 	margin-top: 0em; 
+	overflow: hidden;
 }
-
-	
 
 
 .posters  {
@@ -310,8 +395,177 @@ img#foetoe.feat-image  {
 
 
 
+
+/*
+//#%#%#%#%#%#%#%######################
+// Modal     #########################--------------------------------------------------
+%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#%#*/
+
+.modalDialog {
+  position: fixed;
+  font: normal 1.0em/1.5em Philosopher, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+	  width: 280px;
+	  position: relative;
+	  margin: 0 auto;
+	  padding: 5px 10px 5px 10px;
+	  border-radius: 10px;
+	  background: #fff;
+	  background: -moz-linear-gradient(#fff, #999);
+	  background: -webkit-linear-gradient(#fff, #999);
+	  background: -o-linear-gradient(#fff, #999);
+}
+
+.modalDialog > div > h4, .modalDialog > div > h4 > p  {
+	margin:0;
+}
+
+.close {
+  background: #424242;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: relative;
+  left: 12px;
+  text-align: center;
+  top: 0;
+  width: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #a6b4a9; }
+
+
+
+/*#%#%#%#%#%#%#% Modal Extras %#%#%#%#%#%#%*/
+
+.col3.modal-1a  {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: 1em;
+	margin-right: 0;
+
+}
+
+.col3.modal-1b  {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: 1em;
+	margin-right: 0;
+}
+
+.col3.modal-1c  {
+	width:auto;
+	height:100%;
+	
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	margin-bottom: 2em;
+	margin-top: 2em;
+} 
+/*
+//+++++++++++++++++++++++
+// Modal Btn ------------------------------------------------------------------
+// ++++++++++++++++++++++
+*/
+.btn  {
+  background: #8FBFA0;
+  border: red solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color 2s ease;
+ /* top: 40em;*/
+}  
+.btn-wkshp  {
+  background: #8FBFA0;
+  border: red solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color 3s ease;
+  transition: color 3s ease;
+  color:white;
+  /* top: 40em;*/
+  
+}  
+
+  .btn:hover  {
+    background: #a6b4a9;
+    color:white;
+}
+ 
+ .btn-wkshp:hover  {
+    background: #a6b4a9;
+    color:#ddd;
+} 
+
+  .btn:hover.btn-big  {
+    font-size: 14px;
+    padding: 8px 15px;
+    min-width: 60px;
+}
+
+  .btn-wkshp:hover.btn-big  {
+    font-size: 14px;
+    padding: 8px 15px;
+    min-width: 60px;
+}
+
+.btn-wkshp:last-child  {
+	margin:0;
+	padding: 0;
+	float: right;
+}
+
+
+img #upcoming-poster  {
+		
+}
+
 /*===========================================================
- Media Queries *|* Larger Devices and Desktops/Laptops
+ Media Queries *|* Larger Devices and Desktops/Laptops	--------------------------------
 ============================================================= */
 
 @media screen and (min-width: 480px)  {
@@ -323,6 +577,22 @@ img#foetoe.feat-image  {
 		min-height: 325px;
 		margin-top: 0px;
 	}
+	
+	.modalDialog > div {
+	  width: 400px;
+	}
+
+	
+	.col3.modal-1c  {
+		width:auto;
+		height:100%;
+		padding-right: 5%;
+		margin-left: 33%;
+		margin-right: 33%;
+		
+		margin-bottom: 2em;
+		margin-top: 2em;
+	} 
 }
 
 
@@ -338,6 +608,9 @@ img#foetoe.feat-image  {
 		margin-top: 0px;
 	}
 
+	.modal-responsive .close {
+		font: normal 1.25em/1.75em Philosopher, sans-serif;
+	}
 
 	/*%%%%%%%%  Header and Banner  %%%%%%%%*/
 
@@ -389,9 +662,24 @@ img#foetoe.feat-image  {
 		height:100%;
 		top: 0;
 		position: relative;
-		margin: .25%;
-		padding-bottom: 100px;
+		margin: 0;
+		margin-left: 0;
+		margin-right: 0; 
 	}
+
+	.col3.modal-1c  {
+		width:31%;
+		height:100%;
+		padding-left: 4%;
+/*		
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 2em;
+		margin-top: 2em;
+*/
+	} 
+
+	
 
 	.primary-content  {
 		float:none;
@@ -405,6 +693,19 @@ img#foetoe.feat-image  {
 		padding-bottom: 50px;
 		margin-bottom: -40px;
 	}
+
+	.wkshp-primary-content  {
+		float:left;
+		width: 85%;
+		height:100%;
+		bottom: 0;
+		/*margin: 0 auto;*/
+		position: relative;
+		left: 0;
+		padding-bottom: 50px;
+		margin-bottom: -40px;
+}
+
 	.col:last-child  {
 		float: right;
 	}
@@ -421,6 +722,10 @@ img#foetoe.feat-image  {
 
 	div #paper-scroll-bg {
 		width:75%;
+	}
+
+	.modalDialog > div {
+	  	width: 640px;
 	}
 
 
@@ -463,7 +768,16 @@ img#foetoe.feat-image  {
 		display: inline-block;
 	}
 	
-	
+	.btn .btn-big {
+		font: normal 2em/3em Philosopher, sans-serif;
+	}
+	.btn-wkshp .btn-big {
+		font: normal 2em/3em Philosopher, sans-serif;
+	}
+	.btn-wkshp .btn-big:last-child  {
+		margin: 0 auto;
+		float: right;
+	}
 
 	/*%%%%%%%%%%%%%  Column layout  %%%%%%%%%%%%%%*/
 
@@ -496,9 +810,29 @@ img#foetoe.feat-image  {
 		padding-bottom: 30px;
 		margin-bottom: 0px;
 	}
+
+	.wkshp-primary-content  {
+		width: 66%;
+		height:100%;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		padding-left: 2em;
+		padding-bottom: 30px;
+		margin-bottom: 0px;
+	}
+
 	.col:last-child  {
 		float: right;
 	}
+
+	.col3.modal-1b:last-child  {
+		float: right;
+		margin:0;
+		padding: 0;
+
+	}
+
 	.extra-content,
 	.main-banner  {
 		display: block;  /* UnHide from Mobile view */
@@ -506,23 +840,40 @@ img#foetoe.feat-image  {
 	}
 	.col3  {
 		float: left;
-		width: 32%;
+		width: 31.75%;
 		height:100%;
 		bottom: 0;
 		position: relative;
-		padding-bottom: 100px;
 		padding-left: 20px;
 	}
+
+	.col3 .modal-1b  {
+		padding-right: 0em;
+
+	}
+
+	.col3.modal-1c   {
+		padding-left: 8%;
+	}
+
+	img #upcoming-poster  {
+		margin-left:0;
+		margin-right:4em;
+	}
+
 	.col3:last-child  {
 		float: right;
 		margin-left: -4em;
-		margin-right:2em;
+		margin-right:-1em;
 	}
 
+	
 	div #paper-scroll-bg  {
 		width:85%;
 		margin: 0 auto;
 	}
+
+	
 
 	/*%%%%%%%%%%%%%%%%  Float Clearfix  %%%%%%%%%%%%%%%%%*/
 
@@ -536,9 +887,12 @@ img#foetoe.feat-image  {
 	/*%%%%%%%%%%%%%%%%  Imagery  %%%%%%%%%%%%%%%%%*/
 
 	.feat-image  {
-		width: 100%;
+		width: 50%;
+		margin:25px;
+		padding:5px;
 		float: left;
-		
+		border-color: #add123;
+		margin-bottom: 0;
 	}
 
 }
@@ -571,6 +925,18 @@ img#foetoe.feat-image  {
 		margin-bottom: 0px;
 		border-radius: 10px;
 	}
+
+.wkshp-primary-content  {
+		width: 66%;
+		height:100%;
+		bottom: 0;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 30px;
+		margin-bottom: 0px;
+		border-radius: 10px;
+	}
+
 	.col3:last-child  {
 		float: right;
 		margin-left: -4em;
@@ -583,6 +949,10 @@ img#foetoe.feat-image  {
 
 	div #paper-scroll-bg {
 		width:66%;
+	}
+
+	.col3.modal-1c {
+		padding-left: 10%;
 	}
 	
 }
@@ -609,7 +979,16 @@ img#foetoe.feat-image  {
   }
 
   /* @#@#@#@#@#@#@#@ Footer Banner Animation @#@#@#@#@#@#@ */
-
+/*
+  	.container  {
+  		position: absolute;
+  		width: 100%;
+  		max-width: 100%;
+ 		margin: 0 auto;
+ 		padding: 0 20px;
+  		box-sizing: border-box; 
+  	}
+*/
 	.bg  {
 		-moz-animation: bg 60s linear infinite;
 		-webkit-animation: bg 60s linear infinite;
@@ -630,13 +1009,17 @@ img#foetoe.feat-image  {
 		background: url("../img/soundmusicy.jpg");
 		background-repeat: repeat-x;
 		height:10em;
+		max-width: 100%
 		left: 0;
 		opacity: 1;
 		position: relative;
-		bottom: 195px;
-		margin: 0;
+		bottom: 0px;
+		margin-top: 1.5em;
+		margin-bottom: 1em;
 		padding: 0px;
+		
 	}
+
 	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
@@ -644,6 +1027,25 @@ img#foetoe.feat-image  {
 	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 
 	.bg {
-		background-size: 550px auto;
+		background-size: auto 100%;
 		width: 6750px;
+		overflow-x: hidden !important;
 	}
+
+	  @-moz-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+	  @-webkit-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+	  @-o-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+	  @-ms-keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+	  @keyframes footwrap { 100% { opacity: 1; } 0% { opacity: 0; } }
+
+	  #footwrap {
+	    -moz-animation: footwrap 3s reverse;
+	    -webkit-animation: footwrap 3s reverse;
+	    -o-animation: footwrap 3s reverse;
+	    -ms-animation: footwrap 3s reverse;
+	    animation: footwrap 3s reverse;
+	    opacity: 0;
+	}
+
+
+
