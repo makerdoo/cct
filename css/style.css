@@ -55,7 +55,7 @@ p  {padding-left:10px;padding-right: 10px; line-height: 1.5em;}
 hr.styleez  {
 	width:60%;
 	border-top: medium double #222;
-	text-align: center;
+	text-align: center !important;
 }
 
 hr.stylee  {
@@ -338,7 +338,7 @@ img #foetoe .feat-image  {
 
 .feat-banner  {
 		width: 100%;
-		min-height: 200px;
+		min-height: 250px;
 		background-color: #000;
 
 }
@@ -593,6 +593,42 @@ img #upcoming-poster  {
  Media Queries *|* Larger Devices and Desktops/Laptops	--------------------------------
 ============================================================= */
 
+
+@media screen and (max-width: 279px)  {
+
+	.col3.modal-1c  {
+		width:auto;
+		height:100%;
+		padding-right: 10%;
+		margin-left: 20%;
+		margin-right: 50%;
+		margin-bottom: 2em;
+		margin-top: 2em;
+		margin-right:5em;
+		background-color: red;
+	} 
+	
+
+
+}
+
+
+@media screen  and (max-width: 479px)  {
+
+	.col3.modal-1c  {
+		width:auto;
+		height:100%;
+		padding-right: 5%;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 2em;
+		margin-top: 2em;
+		
+	} 
+
+}
+
+
 @media screen and (min-width: 480px)  {
 	body {
 		font: normal 1.0em/1.5em Philosopher, sans-serif;
@@ -623,7 +659,7 @@ img #upcoming-poster  {
 }
 
 
-@media screen and (min-width: 769px)  {
+@media screen and (min-width: 815px)  {
 	
 	.main-wrapper  {
 		width: 100%;
@@ -702,7 +738,8 @@ img #upcoming-poster  {
 		margin-right: 0;
 		padding-right: 0;
 		padding-left: 0;
-		margin-left: 0;
+		margin-left: 1em;
+
 		
 	
 /*		
@@ -1095,6 +1132,4 @@ img #upcoming-poster  {
 	    animation: footwrap 3s reverse;
 	    opacity: 0;
 	}
-
-
 
