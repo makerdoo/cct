@@ -459,6 +459,18 @@ img #foetoe .feat-image  {
 	  background: -o-linear-gradient(#fff, #999);
 }
 
+.modalDialog > div > img  {
+	  width: 250px;
+	  position: relative;
+	  margin: 0 auto;
+	  padding: 5px 10px 5px 10px;
+	  border-radius: 10px;
+	  background: #fff;
+	  background: -moz-linear-gradient(#fff, #999);
+	  background: -webkit-linear-gradient(#fff, #999);
+	  background: -o-linear-gradient(#fff, #999);
+}
+
 .modalDialog > div > h4, .modalDialog > div > h4 > p  {
 	margin:0;
 }
@@ -511,10 +523,8 @@ img #foetoe .feat-image  {
 
 		width:auto;
 		height:100%;
-		margin-left: 5%;
-		margin-right: 5%;
-	    margin-bottom: 2em;
-		margin-top: 2em;
+		margin:2em auto;
+		
 		
 	} 
 /*
@@ -524,12 +534,25 @@ img #foetoe .feat-image  {
 */
 .btn  {
   background: #8FBFA0;
-  
   border-radius: 3px;
   color: #fff;
   display: inline-block;
   font-size: 14px;
-  padding: 8px 15px;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color 2s ease;
+ /* top: 40em;*/
+}  
+.btn1  {
+  background: none;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0;
   text-decoration: none;
   text-align: center;
   min-width: 60px;
@@ -556,7 +579,7 @@ img #foetoe .feat-image  {
   
 }  
 
-  .btn:hover  {
+  .btn:hover, .btn1:hover  {
     background: #a6b4a9;
     color:white;
 }
@@ -566,15 +589,15 @@ img #foetoe .feat-image  {
     color:#ddd;
 } 
 
-  .btn:hover.btn-big  {
+  .btn:hover.btn-big, .btn1:hover.btn-big  {
     font-size: 14px;
-    padding: 8px 15px;
+    padding: 4px 4px;
     min-width: 60px;
 }
 
   .btn-wkshp:hover.btn-big  {
     font-size: 14px;
-    padding: 8px 15px;
+    padding: 8px 8px;
     min-width: 60px;
 }
 
@@ -585,8 +608,11 @@ img #foetoe .feat-image  {
 }
 
 
-img #upcoming-poster  {
-
+ .modal-1c, a#open-toadal, img#upcoming-poster  {
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
+	display: table; 
 }
 
 /*===========================================================
@@ -594,21 +620,27 @@ img #upcoming-poster  {
 ============================================================= */
 
 
-@media screen and (max-width: 279px)  {
+@media screen and (max-width: 360px)  {
 
 	.col3.modal-1c  {
 		width:auto;
 		height:100%;
-		padding-right: 10%;
-		margin-left: 20%;
-		margin-right: 50%;
-		margin-bottom: 2em;
-		margin-top: 2em;
-		margin-right:5em;
-		background-color: red;
+		margin:0 auto;
+		padding: 0 10% 0 10%;
+		
 	} 
+	img#upcoming-poster  {
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
+	display: table;
+	margin-left: -3em;
+	padding: 0;
+	}
 	
-
+	.btn  {
+		padding:0;
+	}
 
 }
 
@@ -625,6 +657,9 @@ img #upcoming-poster  {
 		margin-top: 2em;
 		
 	} 
+	.btn1  {
+	  background: none;
+	}
 
 }
 
@@ -634,6 +669,8 @@ img #upcoming-poster  {
 		font: normal 1.0em/1.5em Philosopher, sans-serif;
 		color: #222;
 	}
+
+
 	.footer-banner  {
 		min-height: 325px;
 		margin-top: 0px;
@@ -641,6 +678,11 @@ img #upcoming-poster  {
 	
 	.modalDialog > div {
 	  width: 400px;
+	}
+
+	.modalDialog > div > img  {
+	  width: 380px;
+	  
 	}
 
 	.col3.modal-1b  {
@@ -655,7 +697,11 @@ img #upcoming-poster  {
 		margin-bottom: 2em;
 		margin-top: 2em;
 		
-	} 
+	}
+	.btn1  {
+	  background: none;
+	}
+	
 }
 
 
@@ -782,11 +828,12 @@ img #upcoming-poster  {
 	}
 	.col3.modal-1c:last-child  {
 		margin-right:1.5em;
+
 	}
 	.col3:last-child  {
 		float: right;
-		margin-right: 0;
-		padding-right: 1em;
+		margin-right: 1em;
+		padding-right: 0;
 		padding-left: 0;
 		margin-left: 0;
 	}
@@ -803,10 +850,32 @@ img #upcoming-poster  {
 	  	width: 640px;
 	}
 
+	.modalDialog > div > img  {
+	  width: 590px;
+	  padding: 5px 5px 5px 0;
+	  
+	}
 
 	/*%%%%%%%%%%%%%%%%  Imagery  %%%%%%%%%%%%%%%%%*/
 
-	
+	img#upcoming-poster  {
+		float: none;
+		padding-left: 1em;
+		padding-right: 0;
+		margin-left: 1em;
+		margin-right: 0;
+	}
+	 .btn .btn-big a #open-toadal {
+		background-color: none !important;
+
+	}
+	.btn1  {
+	  background: none;
+	}
+	.btn1:hover  {
+	  background: none;
+	  
+	}
 }
 
 
@@ -852,6 +921,9 @@ img #upcoming-poster  {
 	.btn-wkshp .btn-big:last-child  {
 		margin: 0 auto;
 		float: right;
+	}
+	.btn1  {
+	  background: none;
 	}
 
 	/*%%%%%%%%%%%%%  Column layout  %%%%%%%%%%%%%%*/
@@ -933,16 +1005,18 @@ img #upcoming-poster  {
 	}
 
 	.col3.modal-1c   {
-		padding-left: 8%;
+		padding-left: 3%;
 	}
 
 	#showcase1  {
 		min-height: 27em;
 	}
 
-	img #upcoming-poster  {
+	a img #upcoming-poster  {
 		margin-left:0;
-		margin-right:4em;
+		margin-right:10em;
+		padding-right: 20px;
+
 	}
 
 	.col3:last-child  {
@@ -1040,6 +1114,9 @@ img #upcoming-poster  {
 	}
 	.col3.modal-1c:last-child  {
 		margin-right: 10em;
+	}
+	.btn1  {
+	  background: none;
 	}
 }
 
