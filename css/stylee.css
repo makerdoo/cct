@@ -1,0 +1,607 @@
+/*???????????????????????????????????????????????????????
+                  INITIAL PAGE SET_UP
+???????????????????????????????????????????????????????*/
+
+/* logo colors:  dark blue-#3200FB, light blue-#49CFFF, red-#F50E00, purple-#6E00FA */
+@font-face  {font-family: "credit-river";src: url('../fonts/credit-river.ttf');}
+
+*, p, h1, h2, h3, h4, h5, h6, ul, li, .dropdown, .top-bar-section ul li > a {
+	color:#000;
+    font-family: "credit-river", Arial, sans-serif;
+}
+html, body  {
+  background:#000;
+  height: 100%;
+  width:100%;
+  color:#000;
+  font-family: "credit-river", Arial, serif;
+  /*background-image: url('../img/BrickBackground.jpg');*/
+
+}
+.container  {
+	background-image: url('../img/Paper-Grunge-Background-42.jpg');
+	margin: 0 auto;
+}
+.container-blk  {
+	background-color: #000;
+	margin: 0 auto;
+}
+a.button  {
+	color: #FFFFFF;
+	box-shadow:5px 5px 10px #111;
+	background-color: #3200FB;
+}
+
+/*????????????????????????????????????????????????????????
+                  BANNERS, HEADERS, FOOTERS
+????????????????????????????????????????????????????????*/
+header  {
+	background-color: #000;
+	min-width:100%;
+
+}
+.title-heading  {
+    text-align: center;
+}
+.title-area  {
+	background-color: #000;
+	left:0;
+}
+.title-area .selected  {
+	background-color: #000;
+}
+.top-bar .title-area .logo   {
+	position: sticky;
+	z-index: 9999999;
+	top:0px;
+	left:0 !important;
+	float:left !important;
+}
+
+footer, header, .footer-banner  {
+	width:100%;
+	max-width: 100%;
+}
+.fullbanner-header img  {
+	width:100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	background-color:#000;
+}
+.banner-bg  {
+	margin: 0 auto;
+    color:#000;
+    background-color: #000;
+}
+nav.top-bar  {
+	height:5.5em;
+    color:#020202;
+    background-color: #000
+    
+}
+.top-bar ul, li  {
+	list-style-type: none;
+}
+ 
+.main-wrapper  {
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.main-footer p {
+	padding: 0;
+	margin-bottom:0;
+	width:100%;
+}
+footer  {
+	font-size: 1em;
+	padding-top: 15px;
+	margin: auto 0;
+	bottom: 0;
+	left:0;
+	padding-right: 10px;
+	width:100%;
+	max-height: 110px;
+	position: relative;
+	background-color: #000;
+	display: block;	
+}
+.main-footer  {
+		display: inline-block;
+		font-size: 1em;
+		padding-top: 0px;
+		margin-top: 0px;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		bottom: 0;
+		width: 100%;
+		min-height: 100px;
+		min-width:100%;
+		position: relative;
+		color: #000;	
+}
+
+.footer-banner  {
+	margin: 0 auto;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	background-image: url("../img/Rusty-Metal-Background-47.jpg");
+	z-index: -100;
+	width: 100%;
+	max-width: 100%;
+	min-height: 300px;
+	color: #000;
+	padding-top: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.1em;
+	margin-top: 0em; 
+	overflow: hidden;
+}
+
+#big-title  {
+	font-size: 3em;
+	min-width: 100%;
+	background-color: #000;
+}
+.cust-pgbg  {
+	background-color: #111;
+}
+#menu ul li a  {
+	padding:5px 5px;
+	color:#3200FB;
+}
+
+.dropdown  {
+	float:left !important;
+}
+
+.boom  {
+	text-align: center;
+}
+footer{
+	bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+footer p, .footer-banner h2, .footer-banner h3 {
+	color:#49CFFF;
+} 
+ul.dropdown li a  {
+	left:0;
+}
+
+.dropdown a  {
+	overflow: hidden;
+	display:none;
+	left:0;
+}
+#menu ul li a h3, ul.dropdown a h3, ul.dropdown a h4, ul.dropdown a h5 {
+	color:#3200FB;
+}
+
+#menu ul li .selected,  .top-bar-section ul li > a .selected  {
+	background-color: #424242 !important;
+	padding-bottom: 0;
+	margin-bottom: 0px !important;
+	overflow: hidden;
+	color:#3200FB;
+}
+
+.selected a h3, .selected a h4, .top-bar-section ul li > a   {
+	margin-bottom: 0px !important;
+	overflow: hidden;
+	background-color: #333;
+	text-shadow: 2px 1px #000;
+}
+.selected a h3, .selected a h4, .selected a h5  {
+border-top: solid 1px #3200FB;
+}
+ul.left li.selected a  {
+	background:#000;
+}
+
+ul.dropdown a h3:hover, ul.dropdown a h4:hover, ul.dropdown a h5:hover, .top-bar-section ul li > a, #menu ul li a h3:hover   {
+	background-color: #696969;
+	overflow: hidden;
+	border-radius: 1.5px;
+	color:#3200FB;
+	text-shadow: 2px 1px #000;
+	opacity:.9;
+}
+
+#h1-cent  {
+	text-align: center;
+}
+#cent  {
+	text-align: center !important;
+	
+}
+div h5 #cent  {
+	text-align: center !important;
+	
+}
+h2, h3  {
+	text-align: center !important;
+}
+#wkshp-title  {
+    text-align: center;
+}
+.dark-light  {
+	text-shadow: 1px 1px #333;
+
+}
+hr  {
+	border-top: medium double #3200FB;
+	width: 90%;
+	margin: 1.5em auto;
+}
+.vert-hr  {
+	border-left-style: solid;
+	border-right-style: solid;
+	font-weight:200;
+
+}
+hr.styleez  {
+	width:60%;
+	border-top: medium double #3200FB;
+	margin: 1.5em auto;
+}
+
+hr.stylee, hr.stylee1, hr.stylee2, hr.stylee3, hr.stylee4  {
+	padding: 0;
+	border: none;
+	border-top: medium double #3200FB;
+	text-align: center;
+	color: #3200FB !important;
+}
+
+hr.stylee:after  {
+
+	content: " Upcoming Workshops ";
+	display: inline-block;
+	position: relative;
+	top: -0.75em;
+	font-size: 2.5em;
+	padding: 0 3px;
+	border-radius: 5px;
+	background: #e9e9ce; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e9e9ce 16%, #e9e9ce 26%, #DADAC2 55%, #C2C1AD 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(16%,#e9e9ce), color-stop(26%,#e9e9ce), color-stop(55%, #DADAC2), color-stop(100%, #C2C1AD)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #C2C1AD 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #C2C1AD 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #C2C1AD 100%); /* IE10+ */
+	background: linear-gradient(to right,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #C2C1AD 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=1 ); /* IE6-9 */
+}
+hr.stylee1:after  {
+
+	content: " The Music Man ";
+	display: inline-block;
+	position: relative;
+	top: -0.75em;
+	font-size: 1.5em;
+	padding: 0 8px;
+	border-radius: 5px;
+	/*background: #DADAC2;*/
+	background: #e9e9ce; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e9e9ce 16%, #e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(16%,#e9e9ce), color-stop(26%,#e9e9ce), color-stop(55%, #DADAC2), color-stop(80%,#B9B8A6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* IE10+ */
+	background: linear-gradient(to right,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=1 ); /* IE6-9 */
+}
+hr.stylee2:after  {
+
+	content: " No Crime Like The Present ";
+	display: inline-block;
+	position: relative;
+	top: -0.75em;
+	font-size: 1.5em;
+	padding: 0 3px;
+	border-radius: 5px;
+	background: #e9e9ce; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e9e9ce 16%, #e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(16%,#e9e9ce), color-stop(26%,#e9e9ce), color-stop(55%, #DADAC2), color-stop(80%,#B9B8A6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* IE10+ */
+	background: linear-gradient(to right,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=1 ); /* IE6-9 */
+}
+hr.stylee3:after  {
+
+	content: " Our Town ";
+	display: inline-block;
+	position: relative;
+	top: -0.75em;
+	font-size: 1.5em;
+	padding: 0 3px;
+	border-radius: 5px;
+	background: #e9e9ce; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e9e9ce 16%, #e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(16%,#e9e9ce), color-stop(26%,#e9e9ce), color-stop(55%, #DADAC2), color-stop(80%,#B9B8A6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* IE10+ */
+	background: linear-gradient(to right,  #e9e9ce 16%,#e9e9ce 26%, #DADAC2 55%, #B9B8A6 80%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=1 ); /* IE6-9 */
+}
+hr.stylee4:after  {
+
+	content: "  Creating Character Together  ";
+	display: inline-block;
+	position: relative;
+	top: -0.75em;
+	font-size: 2.0em;
+	padding: 0 3px;
+	border-radius: 5px;
+	color:#3200FB;
+	background-color: #000;
+	margin:0;
+}
+
+ul #show-dates h5 li  {
+	vertical-align: middle;
+	text-align: center;
+	float:none;
+}
+.panel  {
+	margin-top: 0;
+	box-shadow: 10px 10px 15px !important;
+	border: 2px double #3200FB;
+	background-color: #f1f1f1;
+}
+
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel li, .panel dl  {
+	color:#000;
+}
+
+#next-up.panel h2 , #next-up.panel h5, #next-up.panel h3, #next-up.panel h4, #next-up.panel h6, #next-up.panel li, #next-up.panel p    {
+	text-align: center;
+	color:#000;
+}
+
+div#next-up .panel ul h5 li  {
+	text-align: center;
+	color:#000;
+}
+
+
+/*@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+ @#@#@#@#@#@#@#@@#@#   Footer Banner Animation  @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#
+ @#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@*/
+
+.bg  {
+		-moz-animation: bg 60s linear infinite;
+		-webkit-animation: bg 60s linear infinite;
+		-o-animation: bg 60s linear infinite;
+		-ms-animation: bg 60s linear infinite;
+		animation: bg 60s linear infinite;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-o-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		/* Set your background with this */
+		background: url("../img/soundmusicy.jpg");
+		background-repeat: repeat-x;
+		height:10em;
+		max-width: 100%
+		left: 0;
+		opacity: 1;
+		position: relative;
+		bottom: 0px;
+		margin-top: 1.5em;
+		margin-bottom: 1em;
+		padding: 0px;
+		padding-bottom: 20px;
+		
+	}
+
+	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@-ms-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
+
+	.bg {
+		background-size: auto 100%;
+		width: 6750px;
+		overflow-x: hidden !important;
+	}
+	.bg-container  {
+		padding-bottom:15px;
+	}
+
+
+/*###################################################################
+##################     MEDIA/IMAGES    ##############################
+###################################################################*/
+img  {
+	border-radius: 5px;
+}
+img#modalTitle  {
+	
+}
+
+img#upcoming-poster  {
+	padding-top: 2em;
+	z-index: 99999;
+	margin: 0 auto;
+	float:none;
+	padding-left: 2em;
+	padding-right: 2em;
+	display: table;
+	vertical-align: middle middle;
+
+}
+.banner-bg img  {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.contact-icons  {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	padding: 10px 10px;
+	margin-top: 2em;
+}
+
+.contact-icons-text  {
+	display: inline-block;
+	margin: 0 auto;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	padding: 10px 10px;
+	font-weight: 600;
+    bottom: 0;
+
+}
+
+ul .pricing-table img  {
+	margin-top: 1em;
+	border-radius: none;
+}
+.pricing-table li  {
+	float: none;
+}
+.pricing-table  {
+	
+	background-color: #fff;
+}
+
+.pricing-table img  {
+	vertical-align:middle;
+}
+
+/*????????????????????????????????????????????????????????
+                  CONTAINERS/GRID ADJUSTMENTS
+????????????????????????????????????????????????????????*/
+
+.top-pad  {
+	margin-top: 2em;
+}
+
+.column, .columns  {
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 64.063em)  {
+	#upcoming-poster  {
+		padding: 10px;
+		margin:0 auto;
+	}
+}
+
+
+
+
+/*????????????????????????????????????????????????????????
+              added mobile-responsive menu
+????????????????????????????????????????????????????????*/
+
+#menu, #menu ul li a  {
+	background-color: #000;  
+	/*height: 60px;*/
+	padding-top: 4%;
+	text-align: center;
+}
+#menu ul li a  {
+	text-align: left;
+}
+
+#menu h3, #menu h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0 0;
+}
+
+
+select {
+	width: 100%;
+	margin: 20px 5px 0px 1%;
+	float: left;
+	background-color: #424242;
+	color:#000;
+	border-color: #000;
+}
+select:hover  {
+	border-color: #3200FB;
+}
+
+
+/* modify CSS to hide links on small widths and show button and select */
+@media (min-width: 120px) and (max-width: 680px) {
+  #menu ul {                            /*hides the #menu between 120px and 640px*/
+    display:none;
+  	}
+  	
+  nav .top-bar  {
+  	display: none;
+  	}
+  #menu ul li  {
+	background-color: #000;
+	color:#f1f1f1;
+	
+	}
+	
+	#menu ul li:hover, select:hover  {
+	background-color: #424242;
+	}
+	
+	hr.stylee, hr.stylee1, hr.stylee2, hr.stylee3, hr.stylee4  {
+		font-size: .75em;
+	}
+
+	
+}
+
+@media (min-width: 120px) and (max-width: 460px)  {
+	hr.stylee, hr.stylee1, hr.stylee2, hr.stylee3, hr.stylee4  {
+		font-size: .5em;
+	}
+}
+
+/* also hide select and button on larger widths */
+@media (min-width: 681px) {         /*hides the 'select' above 641px */
+  #menu select, #menu button {
+    display:none; 
+  }
+  
+  .off-canvas-wrap  {
+  		display: none;
+  	}
+  	#bye-bye  {
+  		display: none;
+  	}
+  	
+}
+
+@media (min-width: 680px) and (max-width: 780px) {
+	#menu ul li h3 {
+		font-size: 1.75em;
+	}
+	
+}
+
+@media (min-width: 781px) and (max-width: 1920px){
+	#menu ul li a h3 {
+		font-size: 2.25em;
+	}
+	
+}
