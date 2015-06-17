@@ -2,7 +2,7 @@
                   INITIAL PAGE SET_UP
 ???????????????????????????????????????????????????????*/
 
-/* logo colors:  dark blue-#3200FB, light blue-#49CFFF, red-#F50E00, purple-#6E00FA */
+/* logo colors:  dark blue-rgb(0, 25, 255) or #3200fb, light blue-#49CFFF or rgb(80, 215, 254), red-#F50E00 or rgb(247, 3, 0), purple-#6E00FA or rgb(101, 23, 255) */
 @font-face  {font-family: "credit-river";src: url('../fonts/credit-river.ttf');}
 
 *, p, h1, h2, h3, h4, h5, h6, ul, li, .dropdown, .top-bar-section ul li > a {
@@ -29,7 +29,7 @@ html, body  {
 a.button  {
 	color: #FFFFFF;
 	box-shadow:5px 5px 10px #111;
-	background-color: #3200FB;
+	background-color: rgb(80, 215, 254);
 	font-family: "credit-river", Arial, sans-serif;
 	text-align: center !important;
 }
@@ -38,17 +38,12 @@ a.button:hover  {
 	box-shadow:5px 5px 10px #111;
 	background-color: #6E00FA;
 }
-#h1-cent  {
-	text-align: center;
-}
-#cent  {
+
+#h1-cent, #cent, div h5 #cent, .boom, #wkshp-title  {
 	text-align: center !important;
-	
 }
-div h5 #cent  {
-	text-align: center !important;
-	
-}
+
+
 h2, h3  {
 	text-align: center !important;
 }
@@ -96,15 +91,7 @@ footer, header, .footer-banner  {
     color:#000;
     background-color: #000;
 }
-nav.top-bar  {
-	height:5.5em;
-    color:#020202;
-    background-color: #000
-    
-}
-.top-bar ul, li  {
-	list-style-type: none;
-}
+
  
 .main-wrapper  {
 	width:100%;
@@ -150,7 +137,11 @@ footer  {
 	margin: 0 auto;
 	text-align: center;
 	text-shadow: 1px 1px #000;
-	background-image: url("../img/Rusty-Metal-Background-47.jpg");
+	/*background-image: url("../img/Rusty-Metal-Background-47.jpg");*/
+	background: -webkit-linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* Standard syntax (must be last) */
 	z-index: -100;
 	width: 100%;
 	max-width: 100%;
@@ -201,6 +192,72 @@ footer p a  {
                   NAV - MENU
 ????????????????????????????????????????????????????????????????????????????????????*/
 
+nav.top-bar  {
+	height:5.5em;
+    color:#020202;
+    background-color: #000
+    
+}
+.top-bar ul, li  {
+	list-style-type: none;
+}
+
+.dropdown  {
+	float:left !important;
+}
+
+ul.dropdown li a  {
+	left:0;
+}
+ul.dropdown li a h4  {
+	padding-left: 5px;
+}
+.underline  {
+	text-decoration: underline;
+}
+
+.dropdown a  {
+	overflow: hidden;
+	display:none;
+	left:0;
+}
+.dropdown .selected a h4  {
+	border-bottom: solid 1px rgb(80, 215, 254);
+}
+#menu ul li a h3, ul.dropdown a h3, ul.dropdown a h4, ul.dropdown a h5 {
+	color:rgb(80, 215, 254);
+}
+
+#menu ul li .selected,  .top-bar-section ul li > a .selected  {
+	background-color: #424242 !important;
+	padding-bottom: 0;
+	margin-bottom: 0px !important;
+	overflow: hidden;
+	color:rgb(80, 215, 254);
+}
+
+.selected a h3, .selected a h4, .top-bar-section ul li > a.selected   {
+	margin-bottom: 0px !important;
+	overflow: hidden;
+	/*background-color: #828282;*/
+	/*text-shadow: 1px 1px #000;*/
+}
+.selected a h3, .selected a h4, .selected a h5  {
+	border-top: solid 1px rgb(80, 215, 254);
+
+}
+ul.left li.selected a  {
+	background:#000;
+}
+
+ul.dropdown a h3:hover, ul.dropdown a h4:hover, ul.dropdown a h5:hover, .top-bar-section ul li > a, #menu ul li a h3:hover   {
+	background-color: #999;
+	overflow: hidden;
+	border-radius: 1.5px;
+	color:rgb(80, 215, 254);
+	/*text-shadow: 2px 1px #000;*/
+	opacity:.9;
+}
 
 /*???????????????????????????????????????????????????????????????????
  added mobile-responsive menu -- media queries below turn it on/off
@@ -222,7 +279,6 @@ footer p a  {
 	padding-left: 5px;
 }
 
-
 select {
 	width: 100%;
 	margin: 20px 5px 0px 1%;
@@ -232,74 +288,14 @@ select {
 	border-color: #000;
 }
 select:hover  {
-	border-color: #3200FB;
+	border-color: rgb(80, 215, 254);
 }
 
 #menu ul li a  {
 	padding:5px 5px;
-	color:#3200FB;
+	color:rgb(80, 215, 254);
 }
 
-.dropdown  {
-	float:left !important;
-}
-
-.boom  {
-	text-align: center;
-}
-
-ul.dropdown li a  {
-	left:0;
-}
-ul.dropdown li a h4  {
-	padding-left: 5px;
-}
-.underline  {
-	text-decoration: underline;
-}
-
-.dropdown a  {
-	overflow: hidden;
-	display:none;
-	left:0;
-}
-#menu ul li a h3, ul.dropdown a h3, ul.dropdown a h4, ul.dropdown a h5 {
-	color:#3200FB;
-}
-
-#menu ul li .selected,  .top-bar-section ul li > a .selected  {
-	background-color: #424242 !important;
-	padding-bottom: 0;
-	margin-bottom: 0px !important;
-	overflow: hidden;
-	color:#3200FB;
-}
-
-.selected a h3, .selected a h4, .top-bar-section ul li > a.selected   {
-	margin-bottom: 0px !important;
-	overflow: hidden;
-	background-color: #828282;
-	/*text-shadow: 1px 1px #000;*/
-}
-.selected a h3, .selected a h4, .selected a h5  {
-border-top: solid 1px #3200FB;
-}
-ul.left li.selected a  {
-	background:#000;
-}
-
-ul.dropdown a h3:hover, ul.dropdown a h4:hover, ul.dropdown a h5:hover, .top-bar-section ul li > a, #menu ul li a h3:hover   {
-	background-color: #999;
-	overflow: hidden;
-	border-radius: 1.5px;
-	color:#3200FB;
-	/*text-shadow: 2px 1px #000;*/
-	opacity:.9;
-}
-
-#wkshp-title  {
-    text-align: center;
-}
 .dark-light  {
 	text-shadow: 1px 1px #333;
 
@@ -310,7 +306,7 @@ ul.dropdown a h3:hover, ul.dropdown a h4:hover, ul.dropdown a h5:hover, .top-bar
 
 
 hr  {
-	border-top: medium double #3200FB;
+	border-top: medium double rgb(80, 215, 254);
 	width: 90%;
 	margin: 1.5em auto;
 }
@@ -322,16 +318,16 @@ hr  {
 }
 hr.styleez  {
 	width:60%;
-	border-top: medium double #3200FB;
+	border-top: medium double rgb(80, 215, 254);
 	margin: 1.5em auto;
 }
 
 hr.stylee, hr.stylee1, hr.stylee2, hr.stylee3, hr.stylee4  {
 	padding: 0;
 	border: none;
-	border-top: medium double #3200FB;
+	border-top: medium double rgb(80, 215, 254);
 	text-align: center;
-	color: #3200FB !important;
+	color: rgb(80, 215, 254) !important;
 }
 
 hr.stylee:after  {
@@ -410,7 +406,7 @@ hr.stylee4:after  {
 	font-size: 2.0em;
 	padding: 0 3px;
 	border-radius: 5px;
-	color:#3200FB;
+	color:rgb(80, 215, 254);
 	background-color: #000;
 	margin:0;
 }
@@ -427,7 +423,7 @@ ul #show-dates h5 li  {
 .panel  {
 	margin-top: 0;
 	box-shadow: 10px 10px 15px !important;
-	border: 2px double #3200FB;
+	/*border: 2px double rgb(0, 25, 255);*/
 	background-color: #f1f1f1;
 }
 
@@ -514,11 +510,11 @@ div#next-up .panel ul h5 li  {
 	@keyframes nav-icons { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,,0); opacity: 0; } 100% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; } }
 
 	li.has-dropdown:hover, .not-click:hover, #menu ul li a h3:hover, #menu ul li a h4:hover, .panel ul li a:hover  {
-				-moz-animation: nav-icons .25s ease-in forwards;
-				-webkit-animation: nav-icons .25s ease-in forwards;
-				-o-animation: nav-icons .25s ease-in forwards;
-				-ms-animation: nav-icons .25s ease-in forwards;
-				animation: nav-icons .25s ease-in forwards;
+				-moz-animation: nav-icons .5s ease-in forwards;
+				-webkit-animation: nav-icons .5s ease-in forwards;
+				-o-animation: nav-icons .5s ease-in forwards;
+				-ms-animation: nav-icons .5s ease-in forwards;
+				animation: nav-icons .5s ease-in forwards;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-o-backface-visibility: hidden;
@@ -683,3 +679,64 @@ ul .pricing-table img  {
 	}
 	
 }
+
+/**************************************************************************
+***************** Profile Card for Boardmembers  **************************
+**************************************************************************/
+
+.profile-card {
+  padding: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 2rem 0;
+  background-color: #fff; }
+.profile-card img {
+    width: 8rem;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #888888; }
+.profile-card .profile-info {
+    padding: 1rem; }
+.profile-card .profile-info h4 {
+      margin-top: 0;
+      text-align: center;
+      text-transform: uppercase; }
+.profile-card .profile-info p {
+      text-align: center; }
+.profile-card .profile-info .inline-list {
+      text-align: center;
+      margin-bottom: 1rem; }
+.profile-card .profile-info .inline-list li {
+        float: none;
+        display: inline-block; }
+.profile-card .profile-info .inline-list i.fi-social-facebook {
+        font-size: 1.5rem;
+        color: #3b5998; }
+.profile-card .profile-info .inline-list i.fi-social-facebook:hover {
+          transform: scale(1.5);
+          transition: all .5s ease-in-out; }
+.profile-card .profile-info .inline-list i.fi-social-twitter {
+        font-size: 1.5rem;
+        color: #55acee; }
+.profile-card .profile-info .inline-list i.fi-social-twitter:hover {
+          transform: scale(1.5);
+          transition: all .5s ease-in-out; }
+.profile-card .profile-info .inline-list i.fi-social-linkedin {
+        font-size: 1.5rem;
+        color: #0077b5; }
+.profile-card .profile-info .inline-list i.fi-social-linkedin:hover {
+          transform: scale(1.5);
+          transition: all .5s ease-in-out; }
+.profile-card .profile-info .inline-list i.fi-social-github {
+        font-size: 1.5rem;
+        color: #333; }
+.profile-card .profile-info .inline-list i.fi-social-github:hover {
+          transform: scale(1.5);
+          transition: all .5s ease-in-out; }
+.profile-card .profile-info .inline-list i.fi-social-youtube {
+        font-size: 1.5rem;
+        color: #cc181e; }
+.profile-card .profile-info .inline-list i.fi-social-youtube:hover {
+          transform: scale(1.5);
+          transition: all .5s ease-in-out; }
