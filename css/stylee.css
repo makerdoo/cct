@@ -446,10 +446,6 @@ div#next-up .panel ul h5 li  {
 	color:#000;
 }
 
-.reveal-modal.open   {
-	width: 480px;
-	height: 720px;
-}
 
 .reveal-modal.open p  {
 	font-size: 120%;
