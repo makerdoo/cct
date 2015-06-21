@@ -138,10 +138,10 @@ footer  {
 	text-align: center;
 	text-shadow: 1px 1px #000;
 	/*background-image: url("../img/Rusty-Metal-Background-47.jpg");*/
-	background: -webkit-linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(51, 51, 51) 10%, black 95%); /* Standard syntax (must be last) */
+	background: -webkit-linear-gradient(#3F3F3F 10%, black 95%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3F3F3F 10%, black 95%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3F3F3F 10%, black 95%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3F3F3F 10%, black 95%); /* Standard syntax (must be last) */
 	z-index: -100;
 	width: 100%;
 	max-width: 100%;
@@ -324,6 +324,7 @@ hr.styleez  {
 
 hr.stylee, hr.stylee1, hr.stylee2, hr.stylee3, hr.stylee4  {
 	padding: 0;
+	width:60%;
 	border: none;
 	border-top: medium double rgb(80, 215, 254);
 	text-align: center;
@@ -444,6 +445,12 @@ div#next-up .panel ul h5 li  {
 	text-align: center;
 	color:#000;
 }
+
+.reveal-modal.open   {
+	width: 480px;
+	height: 720px;
+}
+
 .reveal-modal.open p  {
 	font-size: 120%;
 }
